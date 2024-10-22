@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expotec |  Cadastre-se </title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="static/css/adminlte.min.css">
+  <!-- Expotec -->
+  <link rel="stylesheet" href="static/css/variaveis.css">
+  <link rel="stylesheet" href="static/css/expotec.css">
+
+  
+  <link rel="icon" type="image/png" href="static/img/logos/logo-mini.png">
+  
+  
+  
+</head>
+
+<body class="hold-transition login-page">
+
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="index.html">
+      
+        <img src="static/img/logos/logo.png" alt="Logo" width="200px">
+      
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        
+  
+    <div class="social-auth-links text-center">
+    
+    
+      
+      <a href="/expotecspp/accounts/suap/login/?process=" class="btn btn-block btn-success text-light p-2">
+        <i class="fab  mr-2"></i>Acessar com o SUAP
+      </a>
+    
+      <p class="py-3 p-relative" style="border-bottom: 1px solid var(--gray); opacity: .3;" >
+        <span class="middle-border-bottom">
+            ou
+        </span>
+      </p>
+    </div>
+  
+
+  <form method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="zSveJ4JiNwu7xJlHjQMCNKg35l4bqmO0jCebp2rh62WaxI1MHh6fuuIoeUDRjZ9E">
+
+    
+    <div class="input-group mb-3">
+      <input type="email" name="email" placeholder="Endereço de e-mail" autocomplete="email" maxlength="320" class="form-control" required id="id_email">
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas   fa-envelope  "></span>
+        </div>
+      </div>
+    </div>
+    <small class="text-danger"></small>
+    
+    <div class="input-group mb-3">
+      <input type="text" name="nome_completo" placeholder="Nome Completo" maxlength="100" class="form-control" required id="id_nome_completo">
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas   fa-lock  "></span>
+        </div>
+      </div>
+    </div>
+    <small class="text-danger"></small>
+    
+    <div class="input-group mb-3">
+      <select name="vinculo" class="form-control" id="id_vinculo">
+  <option value="Servidor IFRN">Servidor IFRN</option>
+
+  <option value="Aluno IFRN">Aluno IFRN</option>
+
+  <option value="Estudante Externo">Estudante Externo</option>
+
+  <option value="Profissional Externo">Profissional Externo</option>
+
+  <option value="Outro">Outro</option>
+
+</select>
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas   fa-lock  "></span>
+        </div>
+      </div>
+    </div>
+    <small class="text-danger"></small>
+    
+    <div class="input-group mb-3">
+      <input type="password" name="password1" placeholder="Senha" autocomplete="new-password" class="form-control" required aria-describedby="id_password1_helptext" id="id_password1">
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas   fa-lock  "></span>
+        </div>
+      </div>
+    </div>
+    <small class="text-danger"></small>
+    
+    <div class="input-group mb-3">
+      <input type="password" name="password2" placeholder="Senha (novamente)" autocomplete="new-password" class="form-control" required id="id_password2">
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas   fa-lock  "></span>
+        </div>
+      </div>
+    </div>
+    <small class="text-danger"></small>
+    
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-secondary btn-block"><a href="area_de_usuario.html">Cadastro</a></button>
+      </div>
+    </div>
+  </form>
+  <p class="mt-4 mb-2 text-center">
+    
+        
+    Já tem uma conta? Faça o <a href="login.html">login</a>.
+  </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="static/js/adminlte.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  
+  
+
+</body>
+</html>
