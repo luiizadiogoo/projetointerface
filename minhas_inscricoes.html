@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Expotec | Minhas Inscrições</title>
+  
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   
-  <!-- overlayScrollbars -->
+  <!-- OverlayScrollbars -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.14.1/css/OverlayScrollbars.min.css">
   
   <!-- Font Awesome -->
@@ -20,635 +21,255 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   
   <!-- Select2 -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
-        rel="stylesheet"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-  <!--Toastr-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
-  <!--Bootstrap 5 -->      
-  <link rel="stylesheet"
-        href="static/vendor/select2-bootstrap-5-theme.css">
-
-    
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
   
+  <!-- Toastr -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+  
+  <!-- Bootstrap 5 Theme -->
+  <link rel="stylesheet" href="static/vendor/select2-bootstrap-5-theme.css">
   
   <!-- Theme style -->
   <link rel="stylesheet" href="static/css/adminlte.min.css">
-
-    
+  
   <!-- Expotec -->
   <link rel="stylesheet" href="static/css/variaveis.css">
-
   <link rel="stylesheet" href="static/css/expotec.css">
-
   
   <link rel="icon" type="image/png" href="static/img/logos/logo-mini.png">
   
-  
-
   <meta name="description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="IV Expotec SPP" />
   <meta property="og:url" content="http://eventos.ifrn.edu.br" />
   <meta property="og:description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
-  
   <meta property="og:image" content="http://eventos.ifrn.edu.br/expotecspp/media/eventos/logo/1/logo_VaaoYup.png" />
-  
 </head>
-<body class=" hold-transition sidebar-mini layout-fixed " >
- 
-  
 
-<div class="wrapper">
-
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <span class="navbar-text mt-2 me-2">
+          Olá, <a href="">Teste</a>!
+        </span>
+      </ul>
+    </nav>
     
-
-  
-    
-    
-        
-  
-  
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <span class="navbar-text mt-2 me-2">
-        Olá, <a href="/expotecspp/users/me/">Teste</a>!
-      </span>
-
-      <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link user-thumb" data-toggle="dropdown" href="index.html">
-          
-          <img src="static/img/placeholders/avatar.png" class="rounded-circle img-fluid" height="40px" width="40px">
-          
-          
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-light sidebar-no-expand">
+      <!-- Brand Logo -->
+      <div class="sidebar-brand border-0">
+        <a href="index.html" class="brand-link logo-switch">
+          <img src="static/img/logos/logo.png" alt="Logo" class="brand-image-xl logo-xl mx-auto">
+          <img src="static/img/logos/logo-mini.png" alt="Mini Logo" class="brand-image-xs logo-xs mx-auto">
         </a>
-        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right border-0 mt-2">
-          <a href="/expotecspp/users/me/" class="dropdown-item">
-            <i class="fas fa-user mr-2"></i>Meu Perfil
-          </a>
-          
-          
-          
-            <a href="/expotecspp/accounts/email/" class="dropdown-item">
-              <i class="fas fa-at mr-2"></i>Alterar E-mail
-            </a>
-          
-          
-          
-            <a href="redefinicao_senha.html" class="dropdown-item">
-              <i class="fas fa-key mr-2"></i>Alterar senha
-            </a>
-          
-          
-          
-            <div class="dropdown-divider"></div>
-            <a href="area_de_usuario.html" class="dropdown-item">
-              <i class="fas fa-power-off mr-2"></i>Sair
-            </a>
-          
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group my-3" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
         </div>
-      </li>
-     
-    </ul>
-  </nav>
-  <!-- /.navbar -->
 
-    
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="nav-icon fas fa-home fs-5"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="meus_trabalhos.html" class="nav-link">
+                <i class="nav-icon fas fa-sticky-note fs-5"></i>
+                <p>Meus Trabalhos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="minhas_inscricoes.html" class="nav-link">
+                <i class="nav-icon fas fa-money-check fs-5"></i>
+                <p>Minhas Inscrições</p>
+              </a>
+            </li>        
+          </ul>
+        </nav>
+      </div>
+    </aside>
 
-    
-      
-
-<!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-light  sidebar-no-expand">
-  <!-- Brand Logo -->
-  <div class="sidebar-brand border-0 ">
-    <a href="index.html" class="brand-link logo-switch">
-      
-        <img src="static/img/logos/logo.png" alt="Logo" class="brand-image-xl logo-xl mx-auto">
-      
-
-      
-      <img src="static/img/logos/logo-mini.png" alt="Mini Logo" class="brand-image-xs logo-xs mx-auto">
-      
-    </a>
-  </div>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- SidebarSearch Form -->
-    <div class="form-inline">
-      <div class="input-group my-3" data-widget="sidebar-search">
-        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-sidebar">
-            <i class="fas fa-search fa-fw"></i>
-          </button>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper text-break">
+      <!-- Content Header -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h5 class="text-black-50">Minhas Inscrições</h5>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-      
-
-<ul class="nav nav-pills nav-sidebar nav-child-indent " data-widget="treeview" role="menu" data-accordion="false">
-    
-    
-    <li class="nav-item">
-      
-      <a href="index.html" class="nav-link">
-        <i class="nav-icon fas fa-home fs-5"></i>
-        <p>Dashboard</p>
-      </a>
-      
-    </li>
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/users/trabalho/" class="nav-link">
-        <i class="nav-icon fas fa-sticky-note fs-5"></i>
-        <p>Meus Trabalhos</p>
-      </a>
-      
-    </li>
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/users/me/inscricoes/" class="nav-link">
-        <i class="nav-icon fas fa-money-check fs-5"></i>
-        <p>Minhas Inscrições</p>
-      </a>
-      
-    </li>
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/users/avaliacao/" class="nav-link">
-        <i class="nav-icon fa-solid fa-folder-open fs-5"></i>
-        <p>Minhas Avaliações</p>
-      </a>
-      
-    </li>
-    
-
-
-    
-    
-    <li class="nav-item border-top w-100"></li>
-    <span class="nav-link badge rounded-pill bg-none text-start my-2">Gerenciar</span>
-    </li>
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/eventos/evento/detalhar" class="nav-link">
-        <i class="nav-icon fas fa-info fs-5"></i>
-        <p>Evento</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/eventos/noticia/" class="nav-link">
-        <i class="nav-icon fas fa-newspaper fs-5"></i>
-        <p>Notícias</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/chamadas/chamada/" class="nav-link">
-        <i class="nav-icon fas  fa-bullhorn  fs-5"></i>
-        <p>Chamadas</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/atividades/atividade/" class="nav-link">
-        <i class="nav-icon fas fa-person-chalkboard fs-5"></i>
-        <p>Atividades</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/atividades/agendamento/" class="nav-link">
-        <i class="nav-icon fas fa-calendar-days fs-5"></i>
-        <p>Programação</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/embreve" class="nav-link">
-        <i class="nav-icon fas fa-user-check fs-5"></i>
-        <p>Inscrições</p>
-      </a>
-      
-    </li>
-    
-    
-    <li class="nav-item">
-      
-      <a href="/expotecspp/submissao/submissao/" class="nav-link">
-        <i class="nav-icon fas fa-file-arrow-up fs-5"></i>
-        <p>Submissões</p>
-      </a>
-      
-    </li>
-    
-
-    <li class="nav-item">
-      <a target="_blank" href="#" class="nav-link">
-        <i class="fa fa-question nav-icon"></i>
-        <p>Suporte</p>
-      </a>
-    </li>         
-    
-  </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
-  </div>
-  <!-- /.sidebar -->
-</aside>
-    
-    
-    <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper text-break">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h5 class="text-black-50"> Minhas Inscrições </h5>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            
-<ol class="breadcrumb float-sm-right">
-  
-  
-
-</ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid pb-3">
-        
-<div class="small text-muted mb-2">Inscrições em Eventos</div>
-<div class="card shadow-none">
-  <div class="card-body p-0 m-0 px-1">
-    <div class="table-responsive">
-      <table class="table table-hover table-sm  mb-0">
-        <thead>
-          <tr>
-            <th scope="col">Evento</th>
-            <th scope="col">Data</th>
-            <th scope="col">Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-          <tr>
-            <td>IV - Expotec</td>
-            <td>02/12/2024</td>
-            <td>
-            </td>
-          </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<div class="small text-muted mb-2">Inscrições em Atividades</div>
-<div class="card shadow-none">
-  <div class="card-header px-2">
-    <form id="search-form" class="d-flex flex-md-row flex-column"  method="get">
-      <div class="container-fluid">
-          
-          <div class="small text-muted mb-2">Buscar</div>
-          <div class="filters d-flex flex-column flex-md-row mb-3">
-            
-            
-              
-              
-                
-
-  <div class="mr-2 mb-3 mb-md-0">
-    <select name="evento" class="form-control pr-5" data-placeholder="Evento" id="id_evento">
-  <option value="" selected>---------</option>
-
-  <option value="1">IV - Expotec</option>
-
-</select>
-  </div>
-
-  <div class="mr-2 mb-3 mb-md-0">
-    <select name="tipo" class="form-control pr-5" data-placeholder="Tipo" id="id_tipo">
-  <option value="" selected>Tipo</option>
-
-  <option value="6">Cerimônias</option>
-
-  <option value="8">Apresentação de trabalhos</option>
-
-  <option value="9">Minicursos e Oficinas</option>
-
-  <option value="10">Credenciamento</option>
-
-  <option value="13">Exposições</option>
-
-  <option value="14">Experiências</option>
-
-  <option value="15">Mesas-redondas</option>
-
-</select>
-  </div>
-
-  <div class="mr-2 mb-3 mb-md-0">
-    <input type="text" name="atividade" class="form-control" placeholder="Título da Atividade" id="id_atividade">
-  </div>
-
-<div class="mr-2 mb-3 mb-md-0">
-  <button type="submit" class="btn btn-primary text-nowrap w-100">Filtrar</button>
-</div>
-              
-            
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid pb-3">
+          <div class="small text-muted mb-2">Inscrições em Eventos</div>
+          <div class="card shadow-none">
+            <div class="card-body p-0 m-0 px-1">
+              <div class="table-responsive">
+                <table class="table table-hover table-sm mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Evento</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IV - Expotec</td>
+                      <td>02/12/2024</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-          
 
-          
-          <div class="actions d-flex flex-column flex-md-row justify-content-end">
-            
-
-
+          <div class="small text-muted mb-2">Inscrições em Atividades</div>
+          <div class="card shadow-none">
+            <div class="card-header px-2">
+              <form id="search-form" class="d-flex flex-md-row flex-column" method="get">
+                <div class="container-fluid">
+                  <div class="small text-muted mb-2">Buscar</div>
+                  <div class="filters d-flex flex-column flex-md-row mb-3">
+                    <div class="mr-2 mb-3 mb-md-0">
+                      <select name="evento" class="form-control pr-5" data-placeholder="Evento" id="id_evento">
+                        <option value="" selected>---------</option>
+                        <option value="1">IV - Expotec</option>
+                      </select>
+                    </div>
+                    <div class="mr-2 mb-3 mb-md-0">
+                      <select name="tipo" class="form-control pr-5" data-placeholder="Tipo" id="id_tipo">
+                        <option value="" selected>Tipo</option>
+                        <option value="6">Cerimônias</option>
+                        <option value="8">Apresentação de trabalhos</option>
+                        <option value="9">Minicursos e Oficinas</option>
+                        <option value="10">Credenciamento</option>
+                        <option value="13">Exposições</option>
+                        <option value="14">Experiências</option>
+                        <option value="15">Mesas-redondas</option>
+                      </select>
+                    </div>
+                    <div class="mr-2 mb-3 mb-md-0">
+                      <input type="text" name="atividade" class="form-control" placeholder="Título da Atividade" id="id_atividade">
+                    </div>
+                    <div class="mr-2 mb-3 mb-md-0">
+                      <button type="submit" class="btn btn-secondary text-nowrap w-100">Filtrar</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-body p-0 m-0">
+              <div class="table-container table-responsive container-fluid m-0 p-0">
+                <table class="table mb-0 table-hover custom-table">
+                  <thead>
+                    <tr>
+                      <th class="orderable" scope="col"><a href="?sort=evento">Evento</a></th>
+                      <th class="orderable" scope="col"><a href="?sort=tipo_atividade">Tipo</a></th>
+                      <th class="orderable" scope="col"><a href="?sort=atividade">Atividade</a></th>
+                      <th class="orderable" scope="col"><a href="?sort=dt_inicio">Início</a></th>
+                      <th class="orderable" scope="col"><a href="?sort=local">Local</a></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer px-0 bg-white">
+              <div class="pagination-container">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                    <li class="page-item"><span class="page-link" style="background-color: gray; color: white;">1</span></li>
+                    <li class="page-item disabled"><span class="page-link">Próximo</span></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
-          
-      
-    </form>
-  </div>
-  <div class="card-body p-0 m-0">
-    
-    
-
-
-<div class="table-container table-responsive container-fluid m-0 p-0"">
-    
-        <table class="table mb-0 table-hover custom-table">
-            
-            
-                <thead >
-                <tr>
-                
-                    <th class="orderable" scope="col">
-                        
-                            <a href="?sort=evento">Evento</a>
-                        
-                    </th>
-                
-                    <th class="orderable" scope="col">
-                        
-                            <a href="?sort=tipo_atividade">Tipo</a>
-                        
-                    </th>
-                
-                    <th class="orderable" scope="col">
-                        
-                            <a href="?sort=atividade">Atividade</a>
-                        
-                    </th>
-                
-                    <th class="orderable" scope="col">
-                        
-                            <a href="?sort=dt_inicio">Início</a>
-                        
-                    </th>
-                
-                    <th class="orderable" scope="col">
-                        
-                            <a href="?sort=local">Local</a>
-                        
-                    </th>
-                
-                </tr>
-                </thead>
-            
-            
-            
-                <tbody >
-                
-                    
-                
-                </tbody>
-            
-            
-            
-            
-        </table>
-    
-
-    
-        
-    
-</div>
-
-
-    
-  </div>
-  <div class="card-footer  px-0 bg-white">
-    <div class="pagination-container">
-      
-          <nav aria-label="Page navigation">
-              <ul class="pagination">
-                  
-                      <li class="page-item disabled"><span class="page-link">Anterior</span></li>
-                  
-
-                  
-                      
-                          <li class="page-item active"><span class="page-link">1</span></li>
-                      
-                  
-
-                  
-                      <li class="page-item disabled"><span class="page-link">Próximo</span></li>
-                  
-              </ul>
-          </nav>
-      
+        </div>
+      </section>
     </div>
+
+    <footer class="main-footer">
+      <strong>&copy; IFRN/SPP</strong> - Sistema de Gerenciamento da 4ª Expotec.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 1.0.0
+      </div>
+    </footer>
+
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
   </div>
 
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-
-
-    
-      
-
-<footer class="main-footer">
-
-  <strong>&copy; IFRN/SPP </strong> - Sistema de Gerenciamento da 4ª Expotec</a>.
-
-  <div class="float-right d-none d-sm-inline-block">
-    <b>Version</b> 1.0.0
-  </div>
-
-</footer>
-
-    
-
-    
-      
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-      </aside>
-      <!-- /.control-sidebar -->
-    
-    
-  </div>
-
-
- 
+  <!-- jQuery -->
+  <script src="static/js/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
-<!-- jQuery 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-<script src="static/js/jquery.js"></script>
-
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<!-- Select2 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- OverlayScrollbars -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.14.1/js/OverlayScrollbars.min.js"></script>  
-
-<!--Toastr-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-
+  <!-- Select2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+  <!-- OverlayScrollbars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.14.1/js/OverlayScrollbars.min.js"></script>
   
-
-  
-
-      
-
-
-  
-
-  <div class="modal fade" tabindex="-1" id="app-modal">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content" id="app-modal-content"></div>
-  </div>
-</div>
-
-  <script>
-  $("#app-modal").on("htmx:afterSwap", function (e) {
-    const $target = $(e.target)
-    $target.modal("show")
-    $target.find("[data-dismiss=modal]").click(function () {
-      $target.modal("hide")
-    })
-  })
-</script>
-
-
-  
-  
-  
-  
-  
-  
-  
-  <!-- daterangepicker 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.1.1/daterangepicker.min.js"></script>
-  -->
-
-  <!-- htmx -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.1/htmx.min.js"
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-
-  <!-- Inputmask -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-  
-  <!-- formset -->
-  <script src="static/js/jquery.formset.js"></script>
-
-  <!-- SweetAlerts -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Toastr -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   
   <!-- AdminLTE App -->
   <script src="static/js/adminlte.min.js"></script>
-
-  
-  <!--Expotec -->
   <script src="static/js/expotec.js"></script>
 
-  
-  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
   <script>
     $(document).ready(function() {
-      
-    $("#toggleSelectAll").click((event) => {
-      const target = event.currentTarget;
-      const checkboxes = document.getElementsByName("selection");
-      [...checkboxes].forEach((el) => {
-        el.checked = target.checked;
-        $(el).trigger("change");
+      $("#toggleSelectAll").click((event) => {
+        const target = event.currentTarget;
+        const checkboxes = document.getElementsByName("selection");
+        [...checkboxes].forEach((el) => {
+          el.checked = target.checked;
+          $(el).trigger("change");
+        });
+      });
+      $('input[type="checkbox"]').change((e) => {
+        const $row = $(e.target).closest("tr");
+        if (e.target.checked) {
+          $row.addClass('selected-row');
+        } else {
+          $row.removeClass('selected-row');
+        }
       });
     });
-    $('input[type="checkbox"]').change((e) => {
-      const $row = $(e.target).closest("tr");
-      if (e.target.checked) {
-          $row.addClass('selected-row');
-      } else {
-          $row.removeClass('selected-row');
-      }
-    });
-    });
   </script>
-
-  
 
 </body>
 </html>
