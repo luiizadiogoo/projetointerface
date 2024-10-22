@@ -31,10 +31,139 @@
     <link rel="stylesheet" href="static/bootstrap5/css/bootstrap.min.css.map">
     <link rel="stylesheet" href="static/css/expotec.css">
     <link rel="icon" type="image/png" href="static/img/logos/logo-mini.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="IV EXPOTEC/SPP" />
     <meta property="og:description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
+
+    <style type="text/css">
+        body {
+            margin-top: 20px;
+            background: #FAFAFA;
+        }
+    
+        .order-card {
+            color: #fff;
+            width: 300px; /* Largura fixa */
+            height: 200px; /* Altura fixa */
+            display: flex; /* Flex container */
+            align-items: center; /* Alinhamento vertical no centro */
+            justify-content: center; /* Alinhamento horizontal no centro */
+            text-align: center; /* Centraliza o texto */
+            position: relative; /* Necessário para o pseudo-elemento */
+            overflow: hidden; /* Garante que o pseudo-elemento não transborde */
+            transition: transform 300ms ease; /* Adiciona transição suave */
+            margin: 0 auto; /* Centraliza horizontalmente */
+        }
+    
+        .order-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.2); /* Cor e opacidade do fundo */
+            visibility: hidden; /* Esconde o pseudo-elemento inicialmente */
+            opacity: 0; /* Esconde o pseudo-elemento inicialmente */
+            transform: scaleY(0); /* Inicialmente não visível */
+            transform-origin: top; /* Origem da transformação no topo */
+            transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease; /* Transições suaves */
+            z-index: 1; /* Coloca o pseudo-elemento acima do card */
+        }
+    
+        .order-card:hover::before {
+            visibility: visible; /* Torna visível no hover */
+            opacity: 1; /* Torna opaco no hover */
+            transform: scaleY(1); /* Expande para a altura total */
+        }
+    
+        .bg-c-blue {
+            background: linear-gradient(45deg, #4099ff, #73b4ff);
+        }
+    
+        .bg-c-orange {
+            background: linear-gradient(45deg, #8400ff, #cc00ff);
+            color: white;
+        }
+    
+        .bg-c-red {
+            background: linear-gradient(45deg, #FF4500, #FF6347);
+        }
+    
+        .bg-c-green {
+            background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+        }
+    
+        .bg-c-yellow {
+            background: linear-gradient(45deg, #FFB64D, #ffcb80);
+        }
+    
+        .bg-c-pink {
+            background: linear-gradient(45deg, #ff53a9, #ff869a);
+        }
+    
+        .bg-c-brown {
+            background: linear-gradient(45deg, #8B4513, #A0522D);
+            color: white;
+        }
+    
+        .bg-c-gold {
+            background: linear-gradient(45deg, #f7be13, #FFD700);
+        }
+    
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .card .card-block {
+            padding: 0; /* Removendo padding para centralização */
+            width: 100%;
+        }
+    
+        .order-card i {
+            font-size: 26px;
+        }
+    
+        .f-left {
+            float: left;
+        }
+    
+        .f-right {
+            float: right;
+        }
+    
+        @media (max-width: 767px) {
+            .row {
+                justify-content: center; /* Centraliza os cards na linha */
+            }
+            .order-card {
+                width: 250px; /* Largura fixa */
+                height: 180px;
+            }
+    
+        
+        }
+       /* styles.css */
+.gallery-item img {
+    width: 100%;
+    max-width: 250px; /* Ajuste conforme necessário */
+    height: auto;
+    min-height: 156px;
+    object-fit: contain; /* Alterado de cover para contain */
+}
+
+
+
+    </style>
+    
 
 </head>
 <body>
@@ -74,9 +203,9 @@
         <li class="nav-item  text-end text-md-center px-md-0 px-3">
           <a href="organizacao.html" class="nav-link text-light">Organização</a>
         </li>
-    
+        <!-- adiciou as class btn btn-success -->
         <li class="nav-item  text-end text-md-center px-md-0 px-3">
-          <a href="login.html" class="nav-link text-light">Acessar</a>
+          <a href="login.html" class="btn btn-success text-light nav-link text-light">Acessar</a>
         </li>
     
     </ul>
@@ -167,131 +296,6 @@
         </div><!-- /.container -->
     </section>
     
-    <section id="gallery" class="section gallery">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-12 g-md-2">
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/C_tik3APo0A/?igsh=bTB2aHExemxiYTI0">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods1.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/C_zIAwItr-8/?igsh=MTRnOHQ4Nng0ZDBybg==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_2.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAD_T2KP6X7/?igsh=MW5qeGlwM3VvMDZpdA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_3.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAWY52yPBMI/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_4.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DAbeJgWvFKJ/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_5.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DAoZmdEPEbr/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_6.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAvo6wlP9p3/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_7.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DA6ExBLvh2q/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_8.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DBH4RI2P0s3/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_9.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/ifrnspp/p/DBMT99kvC4D/">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_10_rb0awp8.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DBSNkLhP8Eo/?igsh=MXF5OWx2dmNpNTl1cA==">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_11.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_12.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/evento">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_13.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/evento">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_14.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_15.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ods_16.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
-                    <figure class="figure-fit gallery-item">
-                        <img src="static/img/placeholders/ODS_17.png" class="img-fluid center-block" style="min-height: 156px;">
-                        
-                    </figure>
-                </a>
-                
-            </div>
-    </div></section>
     
     <section id="facts" class="section bg-image-1 facts text-center text-light fs-1">
         <div class="container">
@@ -328,101 +332,79 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Áreas Temáticas</h3>
+                    <!-- Título da Seção -->
+                    <h3 class="section-title text-center">Áreas Temáticas</h3>
                 </div>
             </div>
             <div class="row">
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/4" class="schedule-box flex-fill text-decoration-none" style="background:#4c9f38 linear-gradient(90deg, rgba(255, 255, 255, 0.6), #4c9f38) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS AGRÁRIAS
-                        </h3>
-                    
-                    </a>
+                <!-- Primeiro Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-blue order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS AGRÁRIAS</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/5" class="schedule-box flex-fill text-decoration-none" style="background:#26bde2 linear-gradient(90deg, rgba(255, 255, 255, 0.6), #26bde2) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS BIOLÓGICAS
-                        </h3>
-                    
-                    </a>
+                <!-- Segundo Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-green order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS BIOLÓGICAS</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/6" class="schedule-box flex-fill text-decoration-none" style="background:#fcc30b linear-gradient(90deg, rgba(255, 255, 255, 0.6), #fcc30b) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS DA SAÚDE
-                        </h3>
-                    
-                    </a>
+                <!-- Terceiro Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-yellow order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS DA SAÚDE</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/7" class="schedule-box flex-fill text-decoration-none" style="background:#e5223b linear-gradient(90deg, rgba(255, 255, 255, 0.6), #e5223b) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS EXATAS E DA TERRA
-                        </h3>
-                    
-                    </a>
+                <!-- Quarto Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-pink order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS EXATAS E DA TERRA</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/8" class="schedule-box flex-fill text-decoration-none" style="background:#a21942 linear-gradient(90deg, rgba(255, 255, 255, 0.6), #a21942) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS HUMANAS
-                        </h3>
-                    
-                    </a>
+                <!-- Quinto Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-orange order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS HUMANAS</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/9" class="schedule-box flex-fill text-decoration-none" style="background:#dd1367 linear-gradient(90deg, rgba(255, 255, 255, 0.6), #dd1367) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            CIÊNCIAS SOCIAIS E APLICADAS
-                        </h3>
-                    
-                    </a>
+                <!-- Sexto Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-brown order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">CIÊNCIAS SOCIAIS E APLICADAS</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/10" class="schedule-box flex-fill text-decoration-none" style="background:#00689d linear-gradient(90deg, rgba(255, 255, 255, 0.6), #00689d) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            ENGENHARIAS
-                        </h3>
-                    
-                    </a>
+                <!-- Sétimo Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-red order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">ENGENHARIAS</h2>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 col-sm-6  mb-3  d-flex">
-                    <a href="/expotecspp/portal/evento/areas/11" class="schedule-box flex-fill text-decoration-none" style="background:#fd6925 linear-gradient(90deg, rgba(255, 255, 255, 0.6), #fd6925) repeat-x !important;">
-                        
-                        <h3 class="text-wrap text-break p-3  text-light">
-                            
-                            LINGUÍSTICA, LETRAS E ARTES
-                        </h3>
-                    
-                    </a>
+                <!-- Oitavo Card -->
+                <div class="col-md-4 col-xl-3">
+                    <div class="card bg-c-gold order-card">
+                        <div class="card-block">
+                            <h2 class="text-wrap text-break p-3 text-center text-light">LINGUÍSTICA, LETRAS E ARTES</h2>
+                        </div>
+                    </div>
                 </div>
-                
-              
-    </div></div></section>
+            </div>
+        </div>
+    </section>
+    
     
     <section id="contribution" class="section bg-image-2 contribution">
         <div class="container">
@@ -438,15 +420,124 @@
             </div>
         </div>
     </section>
+
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-12 g-md-2">
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/C_tik3APo0A/?igsh=bTB2aHExemxiYTI0">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods1.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/C_zIAwItr-8/?igsh=MTRnOHQ4Nng0ZDBybg==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_2.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAD_T2KP6X7/?igsh=MW5qeGlwM3VvMDZpdA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_3.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAWY52yPBMI/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_4.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DAbeJgWvFKJ/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_5.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DAoZmdEPEbr/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_6.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DAvo6wlP9p3/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_7.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/p/DA6ExBLvh2q/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_8.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DBH4RI2P0s3/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_9.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/ifrnspp/p/DBMT99kvC4D/">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_10_rb0awp8.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/reel/DBSNkLhP8Eo/?igsh=MXF5OWx2dmNpNTl1cA==">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_11.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_12.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/evento">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_13.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/evento">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_14.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_15.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ods_16.png" class="center-block">
+                    </figure>
+                </a>
+                
+                <a class="text-decoration-none" target="_blank" href="https://eventos.ifrn.edu.br/expotecspp/eventos">
+                    <figure class="figure-fit gallery-item">
+                        <img src="static/img/placeholders/ODS_17.png" class="center-block">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
     
     <section id="partner" class="section partner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Parceiros</h3>
+                    <!-- Adicionando a class text-center  -->
+                    <h3 class="section-title text-center">Parceiros</h3>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-12 g-md-2">
+            <div class="row row-cols-1 row-cols-md-4 g-12 g-md-2 justify-content-center"> <!-- Adicionando justify-content-center para centralizar as colunas -->
                 
                 <div class="col text-center bg-white me-2 p-3">
                     <a class="partner-box w-100" target="" href="javascript:void(0)" style="background: url(static/img/logos/submission_2_2_coverImage_pt_BR_t_CzTmn06.jpg) no-repeat center center;"></a>
@@ -455,6 +546,7 @@
                 <div class="col text-center bg-white me-2 p-3">
                     <a class="partner-box w-100" target="_blank" href="https://funcern.br/" style="background: url(static/img/logos/d897b9b6-43b3-4798-b192-aefad4abd038.jpeg) no-repeat center center;"></a>
                 </div>
+
                 
             </div>
     </div></section>
@@ -499,8 +591,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="site-info text-muted">IV Expotec<br> <small>Potengi sustentável: juntos pela agenda 2030</small></p>
-                        <ul class="social-block">
+                        <!-- almentou a margin-top para 50px -->
+<p class="site-info text-muted" style="color: white;">
+                        <small style="color: white;">IV EXPOTEC</small>
+                        
+                        <br>
+                        <small style="color: white;">Potengi sustentável: juntos pela agenda 2030</small>
+                    </p>                        <ul class="social-block">
                             
                             <li><a href="https://www.instagram.com/ifrnspp/" target="_blank"><i class="ion-social-instagram"></i></a></li>
                             
