@@ -42,6 +42,131 @@
   <meta property="og:url" content="http://eventos.ifrn.edu.br" />
   <meta property="og:description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
   <meta property="og:image" content="http://eventos.ifrn.edu.br/expotecspp/media/eventos/logo/1/logo_VaaoYup.png" />
+  <style type="text/css">
+        body {
+            margin-top: 20px;
+            background: #FAFAFA;
+        }
+    
+        .order-card {
+            color: #fff;
+            width: 300px; /* Largura fixa */
+            height: 200px; /* Altura fixa */
+            display: flex; /* Flex container */
+            align-items: center; /* Alinhamento vertical no centro */
+            justify-content: center; /* Alinhamento horizontal no centro */
+            text-align: center; /* Centraliza o texto */
+            position: relative; /* Necessário para o pseudo-elemento */
+            overflow: hidden; /* Garante que o pseudo-elemento não transborde */
+            transition: transform 300ms ease; /* Adiciona transição suave */
+            margin: 0 auto; /* Centraliza horizontalmente */
+        }
+    
+        .order-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.2); /* Cor e opacidade do fundo */
+            visibility: hidden; /* Esconde o pseudo-elemento inicialmente */
+            opacity: 0; /* Esconde o pseudo-elemento inicialmente */
+            transform: scaleY(0); /* Inicialmente não visível */
+            transform-origin: top; /* Origem da transformação no topo */
+            transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease; /* Transições suaves */
+            z-index: 1; /* Coloca o pseudo-elemento acima do card */
+        }
+    
+        .order-card:hover::before {
+            visibility: visible; /* Torna visível no hover */
+            opacity: 1; /* Torna opaco no hover */
+            transform: scaleY(1); /* Expande para a altura total */
+        }
+    
+        .bg-c-blue {
+            background: linear-gradient(45deg, #4099ff, #73b4ff);
+        }
+    
+        .bg-c-orange {
+            background: linear-gradient(45deg, #8400ff, #cc00ff);
+            color: white;
+        }
+    
+        .bg-c-red {
+            background: linear-gradient(45deg, #FF4500, #FF6347);
+        }
+    
+        .bg-c-green {
+            background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+        }
+    
+        .bg-c-yellow {
+            background: linear-gradient(45deg, #FFB64D, #ffcb80);
+        }
+    
+        .bg-c-pink {
+            background: linear-gradient(45deg, #ff53a9, #ff869a);
+        }
+    
+        .bg-c-brown {
+            background: linear-gradient(45deg, #8B4513, #A0522D);
+            color: white;
+        }
+    
+        .bg-c-gold {
+            background: linear-gradient(45deg, #f7be13, #FFD700);
+        }
+    
+        .card {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            border: none;
+            margin-bottom: 30px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .card .card-block {
+            padding: 0; /* Removendo padding para centralização */
+            width: 100%;
+        }
+    
+        .order-card i {
+            font-size: 26px;
+        }
+    
+        .f-left {
+            float: left;
+        }
+    
+        .f-right {
+            float: right;
+        }
+    
+        @media (max-width: 767px) {
+            .row {
+                justify-content: center; /* Centraliza os cards na linha */
+            }
+            .order-card {
+                width: 250px; /* Largura fixa */
+                height: 180px;
+            }
+    
+        
+        }
+       /* styles.css */
+.gallery-item img {
+    width: 100%;
+    max-width: 250px; /* Ajuste conforme necessário */
+    height: auto;
+    min-height: 156px;
+    object-fit: contain; /* Alterado de cover para contain */
+}
+
+  </style>
+    
 </head>
 <body class="bg-black single-page">
   
@@ -83,45 +208,55 @@
     
     <section class="section bg-white" style="padding-bottom: 450px;">
         <div class="container">
-            <div class="row my-3">
+            <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">CHAMADAS DE TRABALHOS</h3>
+                    <h3 class="section-title text-center">CHAMADAS DE TRABALHOS</h3>
                 </div>
             </div>
-            <div class="row justify-content-center justify-content-lg-start">
-                <div class="col-md-4 col-sm-6 mb-3 d-flex ms-md-auto ms-lg-0">
+            <div class="row">
+                <!-- Primeiro Card -->
+                <div class="col-md-4 col-xl-3 mb-3">
+                    <div class="card bg-c-gold order-card">
+                        <a href="detalhar_chamada.html">
+                            <div class="card-block">
+                                <h2 class="text-wrap text-break p-3 text-center text-light">OFICINAS E MINICURSOS</h2>
+                                <div class="time text-wrap text-break text-center text-light">(14/10 a 03/11)</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Segundo Card -->
+                
+                
+                <!-- Terceiro Card -->
+                <div class="col-md-4 col-xl-3 mb-3">
                     <a href="detalhar_chamada.html" class="text-decoration-none w-100">
-                        <div class="schedule-box flex-fill">
-                            <div class="time">(14/10 a 03/11)</div>
-                            <h3 class="text-wrap text-break px-3">COMUNICAÇÃO ORAL</h3>
-                            <p class="text-wrap text-break px-3"></p>
+                        <div class="card bg-c-red order-card">
+                            <div class="card-block">
+                                <h2 class="text-wrap text-break p-3 text-center text-light">OFICINAS E MINICURSOS</h2>
+                                <div class="time text-wrap text-break text-center text-light">(14/10 a 03/11)</div>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-3 d-flex ms-md-auto ms-lg-0">
+                <!-- Quarto Card -->
+                <div class="col-md-4 col-xl-3 mb-3">
                     <a href="detalhar_chamada.html" class="text-decoration-none w-100">
-                        <div class="schedule-box flex-fill">
-                            <div class="time">(14/10 a 03/11)</div>
-                            <h3 class="text-wrap text-break px-3">MOSTRA CIENTÍFICA E TECNOLÓGICA</h3>
-                            <p class="text-wrap text-break px-3"></p>
+                        <div class="card bg-c-green order-card">
+                            <div class="card-block">
+                                <h2 class="text-wrap text-break p-3 text-center text-light">OFICINAS E MINICURSOS</h2>
+                                <div class="time text-wrap text-break text-center text-light">(14/10 a 03/11)</div>
+                            </div>                                                                                          
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-3 d-flex ms-md-auto ms-lg-0">
+                <div class="col-md-4 col-xl-3 mb-3">
                     <a href="detalhar_chamada.html" class="text-decoration-none w-100">
-                        <div class="schedule-box flex-fill">
-                            <div class="time">(14/10 a 03/11)</div>
-                            <h3 class="text-wrap text-break px-3">OFICINAS E MINICURSOS</h3>
-                            <p class="text-wrap text-break px-3"></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-3 d-flex ms-md-auto ms-lg-0">
-                    <a href="detalhar_chamada.html" class="text-decoration-none w-100">
-                        <div class="schedule-box flex-fill">
-                            <div class="time">(14/10 a 03/11)</div>
-                            <h3 class="text-wrap text-break px-3">PÔSTERES</h3>
-                            <p class="text-wrap text-break px-3"></p>
+                        <div class="card bg-c-blue order-card">
+                            <div class="card-block">
+                                <h2 class="text-wrap text-break p-3 text-center text-light">OFICINAS E MINICURSOS</h2>
+                                <div class="time text-wrap text-break text-center text-light">(14/10 a 03/11)</div>
+                            </div>
                         </div>
                     </a>
                 </div>
