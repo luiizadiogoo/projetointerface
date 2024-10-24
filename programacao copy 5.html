@@ -47,6 +47,36 @@
   <meta property="og:description" content="IV Exposição Científica, Tecnológica e Cultural – EXPOTEC - IFRN/SPP" />
   
   <meta property="og:image" content="http://eventos.ifrn.edu.br/expotecspp/media/eventos/logo/1/logo_VaaoYup.png" />
+  <style>
+    /* Estilo base para os botões */
+    .button-card {
+        position: relative;
+        transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease;
+        z-index: 1;
+    }
+    
+    /* Estilo para o efeito de opacidade ao clicar */
+    .button-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 100ms ease, visibility 200ms ease;
+    }
+    
+    /* Ao passar o mouse (hover), a opacidade aumenta */
+    .button-card:hover::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    
+      </style>
   
 </head>
 <body class="bg-black single-page" >
@@ -104,66 +134,67 @@
                 <div class="col-md-3">
                     <h3 class="section-title text-break">PROGRAMAÇÃO</h3>
                 </div>
-               
                 <div class="col-md-9 ">
                     <div class="d-flex justify-content-center justify-content-md-end flex-wrap mb-3">
                         <div class="mb-1 ms-1">
-                            <div class="flex-fill fw-light p-2 mt-0" style="background:black;">
-                                <a href="programacao.html" class="text-decoration-none"><small class="text-wrap text-light px-1">Todas</small></a>
-                            </div>
+                            <a href="programacao.html" class="text-decoration-none">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:black;">
+                                    <small class="text-wrap text-light px-1">Todas</small>
+                                </div>
+                            </a>
                         </div>
                         
                         <div class="mb-1 ms-1">
                             <a href="programacao copy.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#e63b7a;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#e63b7a;">
                                     <small class="text-wrap text-light px-1">Cerimônias</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
+                        <div class="mb-1 ms-1 button-overlay">
                             <a href="programacao copy 8.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#ffaa00;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#ffaa00;">
                                     <small class="text-wrap text-light px-1">Apresentação de trabalhos</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
+                        <div class="mb-1 ms-1 button-overlay">
                             <a href="programacao copy 7.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#a77b00;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#a77b00;">
                                     <small class="text-wrap text-light px-1">Minicursos e Oficinas</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
+                        <div class="mb-1 ms-1 button-overlay">
                             <a href="programacao copy 6.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#00a3d7;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#00a3d7;">
                                     <small class="text-wrap text-light px-1">Credenciamento</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
+                        <div class="mb-1 ms-1 button-overlay">
                             <a href="programacao copy 5.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#4f7a28;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#4f7a28;">
                                     <small class="text-wrap text-light px-1">Exposições</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
-                            <a href="programacao copy 4.html" class="text-decoration-none">
+                        <div class="mb-1 ms-1 button-overlay">
+                            <a href="flex-fill fw-light p-2 button-card" class="text-decoration-none">
                                 <div class="flex-fill fw-light p-2" style="background:#96d35f;">
                                     <small class="text-wrap text-light px-1">Experiências</small>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="mb-1 ms-1">
+                        <div class="mb-1 ms-1 button-overlay">
                             <a href="programacao copy 3.html" class="text-decoration-none">
-                                <div class="flex-fill fw-light p-2" style="background:#006d8f;">
+                                <div class="flex-fill fw-light p-2 button-card" style="background:#006d8f;">
                                     <small class="text-wrap text-light px-1">Mesas-redondas</small>
                                 </div>
                             </a>
